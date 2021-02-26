@@ -1,18 +1,11 @@
 <template>
-  <div class="wrap">
-    <div class="txt">「{{ txt }}」</div>
-    <SimpleForm initial-value="初期値だよ" @submit="onSubmit" />
-  </div>
+  <div class="wrap"></div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
-import SimpleForm from '~/components/SimpleForm'
 
 export default {
-  components: {
-    SimpleForm,
-  },
   computed: {
     ...mapGetters('test', ['txt']),
   },
